@@ -42,7 +42,7 @@ public class PeliculaController {
     public String crearPelicula(Model model){
         List<Sala> listaSalas = salaService.listSala();
         model.addAttribute("pelicula", new Pelicula());
-        model.addAttribute("paises", listaSalas);
+        model.addAttribute("salas", listaSalas);
         return "crear";
     }
     
